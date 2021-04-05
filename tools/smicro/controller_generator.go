@@ -7,7 +7,7 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/ibinarytree/koala/util"
+	"smicro/util"
 	"github.com/ibinarytree/proto"
 )
 

@@ -7,7 +7,7 @@ import(
 	"os"
 	"fmt"
 	
-	"github.com/ibinarytree/smicro/server"
+	"smicro/server"
 	{{if not .Prefix}}
 	"router"
 	{{else}}

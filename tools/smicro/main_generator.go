@@ -6,7 +6,7 @@ import (
 	"path"
 	"text/template"
 
-	"github.com/ibinarytree/koala/util"
+	"smicro/util"
 )
 
 type MainGenerator struct {

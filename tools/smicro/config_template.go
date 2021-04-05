@@ -7,7 +7,7 @@ prometheus:
 service_name: {{.ServiceName}}
 register:
   switch_on: true
-  register_path: /ibinarytree/smicro/service/
+  register_path: /smicro/service/
   timeout: 1s
   heart_beat: 10
   register_name: etcd
