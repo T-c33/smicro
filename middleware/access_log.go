@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"time"
 
+	"github.com/T-c33/smicro/logs"
+	"github.com/T-c33/smicro/meta"
 	"google.golang.org/grpc/status"
-	"smicro/logs"
-	"smicro/meta"
 )
 
 func AccessLogMiddleware(next MiddlewareFunc) MiddlewareFunc {

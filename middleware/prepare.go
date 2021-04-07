@@ -3,9 +3,9 @@ package middleware
 import (
 	"context"
 
+	"github.com/T-c33/smicro/logs"
+	"github.com/T-c33/smicro/util"
 	"google.golang.org/grpc/metadata"
-	"smicro/logs"
-	"smicro/util"
 )
 
 func PrepareMiddleware(next MiddlewareFunc) MiddlewareFunc {

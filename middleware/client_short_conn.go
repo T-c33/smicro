@@ -4,10 +4,10 @@ import (
 	"context"
 	"fmt"
 
+	"github.com/T-c33/smicro/errno"
+	"github.com/T-c33/smicro/logs"
+	"github.com/T-c33/smicro/meta"
 	"google.golang.org/grpc"
-	"smicro/errno"
-	"smicro/logs"
-	"smicro/meta"
 )
 
 func ShortConnectMiddleware(next MiddlewareFunc) MiddlewareFunc {

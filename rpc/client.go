@@ -5,12 +5,12 @@ import (
 	"sync"
 	"time"
 
+	"github.com/T-c33/smicro/loadbalance"
+	"github.com/T-c33/smicro/logs"
+	"github.com/T-c33/smicro/meta"
+	"github.com/T-c33/smicro/middleware"
+	"github.com/T-c33/smicro/registry"
 	"golang.org/x/time/rate"
-	"smicro/loadbalance"
-	"smicro/logs"
-	"smicro/meta"
-	"smicro/middleware"
-	"smicro/registry"
 )
 
 var initRegistryOnce sync.Once

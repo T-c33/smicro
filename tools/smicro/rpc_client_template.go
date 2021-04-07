@@ -9,9 +9,9 @@ import (
 	"fmt"
 
 	"{{.ImportPath}}"
-	"github.com/t-c33/smicro/rpc"
-	"github.com/t-c33/smicro/errno"
-	"github.com/t-c33/smicro/meta"
+	"github.com/T-c33/smicro/rpc"
+	"github.com/T-c33/smicro/errno"
+	"github.com/T-c33/smicro/meta"
 	
 )
 
@@ -72,7 +72,7 @@ func mwClient{{.Name}}(ctx context.Context, request interface{}) (resp interface
 `
 
 var grpcClientWrapTemplate = `
-package krpc
+package srpc
 
 import (
 	"context"
@@ -83,17 +83,17 @@ import (
 )
 
 var (
-	k{{Capitalize .ClientPackageName}}Client *{{.ClientPackageName}}.{{Capitalize .PackageName}}Client
+	s{{Capitalize .ClientPackageName}}Client *{{.ClientPackageName}}.{{Capitalize .PackageName}}Client
 )
 
 func init() {
 
-	k{{Capitalize .ClientPackageName}}Client = {{.ClientPackageName}}.New{{Capitalize .PackageName}}Client("{{.ServiceName}}")
+	s{{Capitalize .ClientPackageName}}Client = {{.ClientPackageName}}.New{{Capitalize .PackageName}}Client("{{.ServiceName}}")
 }
 
 {{range .Rpc}}
 func {{Capitalize $.PackageName}}{{.Name}}(ctx context.Context, r*{{$.PackageName}}.{{.RequestType}})(resp*{{$.PackageName}}.{{.ReturnsType}}, err error){
-	return k{{Capitalize $.ClientPackageName}}Client.{{.Name}}(ctx, r)
+	return s{{Capitalize $.ClientPackageName}}Client.{{.Name}}(ctx, r)
 }
 {{end}}
 `

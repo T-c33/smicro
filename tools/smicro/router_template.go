@@ -6,8 +6,8 @@ package router
 import(
 	"context"
 
-	"github.com/ibinarytree/smicro/server"
-	"github.com/ibinarytree/smicro/meta"
+	"github.com/T-c33/smicro/server"
+	"github.com/T-c33/smicro/meta"
 	"{{.ImportPath}}"
 	{{if not .Prefix}}
 	"controller"

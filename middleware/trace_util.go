@@ -7,12 +7,12 @@ import (
 
 	"fmt"
 
+	"github.com/T-c33/smicro/logs"
 	"github.com/opentracing/opentracing-go"
 	"github.com/uber/jaeger-client-go"
 	"github.com/uber/jaeger-client-go/config"
 	"github.com/uber/jaeger-client-go/transport/zipkin"
 	"google.golang.org/grpc/metadata"
-	"smicro/logs"
 )
 
 const (

@@ -7,8 +7,6 @@ import (
 type Options struct {
 	Addrs   []string
 	Timeout time.Duration
-	// example:  /xxx_company/app/kuaishou/service_A/10.192.1.1:8801
-	// example:  /xxx_company/app/kuaishou/service_A/10.192.1.2:8801
 	RegistryPath string
 	HeartBeat    int64
 }

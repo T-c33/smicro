@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"testing"
 
-	"smicro/registry"
+	"github.com/T-c33/smicro/registry"
 )
 
 func TestSelect(t *testing.T) {

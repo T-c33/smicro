@@ -3,9 +3,9 @@ package middleware
 import (
 	"context"
 
-	"smicro/logs"
-	"smicro/meta"
-	"smicro/registry"
+	"github.com/T-c33/smicro/logs"
+	"github.com/T-c33/smicro/meta"
+	"github.com/T-c33/smicro/registry"
 )
 
 func NewDiscoveryMiddleware(discovery registry.Registry) Middleware {

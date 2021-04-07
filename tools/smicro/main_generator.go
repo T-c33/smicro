@@ -6,7 +6,7 @@ import (
 	"path"
 	"text/template"
 
-	"smicro/util"
+	"github.com/T-c33/smicro/util"
 )
 
 type MainGenerator struct {

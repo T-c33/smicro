@@ -9,8 +9,8 @@ import (
 	"sync/atomic"
 	"time"
 
+	"github.com/T-c33/smicro/registry"
 	"github.com/coreos/etcd/clientv3"
-	"smicro/registry"
 )
 
 const (

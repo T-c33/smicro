@@ -23,7 +23,7 @@ var AllDirList []string = []string{
 	"idl",
 	"main",
 	"scripts",
-	"rpc/krpc/clients",
+	"rpc/srpc/clients",
 	"conf/product",
 	"conf/test",
 	"model",
@@ -115,7 +115,7 @@ func (g *GeneratorMgr) initOutputDir(opt *Option) (err error) {
 
 	opt.GoPath = os.Getenv("GOPATH")
 	if len(opt.Prefix) > 0 {
-		//假如用户指定Prefix=github.com/ibinarytree/smicro/example
+		//假如用户指定Prefix=github.com/T-c33/smicro/example
 		//outputDir=$GOPATH/$Prefix
 		opt.Output = path.Join(opt.GoPath, "src", opt.Prefix)
 		return

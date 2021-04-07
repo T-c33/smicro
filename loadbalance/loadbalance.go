@@ -4,7 +4,7 @@ import (
 	"context"
 	"errors"
 
-	"smicro/registry"
+	"github.com/T-c33/smicro/registry"
 )
 
 var (

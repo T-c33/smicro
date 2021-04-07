@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	"smicro/logs"
-	"smicro/registry"
+	"github.com/T-c33/smicro/logs"
+	"github.com/T-c33/smicro/registry"
 )
 
 type selectedNodes struct {
@@ -30,9 +30,9 @@ func GetSelectedNodes(ctx context.Context) *selectedNodes {
 	return sel
 }
 
-func filterNodes(ctx context.Context, nodes []*Node) []*Node {
+func filterNodes(ctx context.Context, nodes []*registry.Node) []*registry.Node {
 
-	var newNodes []*Node
+	var newNodes []*registry.Node
 	sel := GetSelectedNodes(ctx)
 	if sel == nil {
 		return newNodes
@@ -51,7 +51,7 @@ func filterNodes(ctx context.Context, nodes []*Node) []*Node {
 	return newNodes
 }
 
-func setSelected(ctx context.Context, node *Node) {
+func setSelected(ctx context.Context, node *registry.Node) {
 
 	sel := GetSelectedNodes(ctx)
 	if sel == nil {

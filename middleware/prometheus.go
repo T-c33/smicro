@@ -6,9 +6,9 @@ import (
 	"net/http"
 	"time"
 
+	"github.com/T-c33/smicro/meta"
+	"github.com/T-c33/smicro/middleware/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
-	"smicro/meta"
-	"smicro/middleware/prometheus"
 )
 
 var (

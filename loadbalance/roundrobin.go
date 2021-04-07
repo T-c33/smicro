@@ -3,8 +3,8 @@ package loadbalance
 import (
 	"context"
 
-	"smicro/errno"
-	"smicro/registry"
+	"github.com/T-c33/smicro/errno"
+	"github.com/T-c33/smicro/registry"
 )
 
 type RoundRobinBalance struct {

@@ -3,13 +3,13 @@ package middleware
 import (
 	"context"
 
+	"github.com/T-c33/smicro/logs"
+	"github.com/T-c33/smicro/meta"
+	"github.com/T-c33/smicro/util"
 	"github.com/opentracing/opentracing-go"
 	"github.com/opentracing/opentracing-go/ext"
 	"github.com/opentracing/opentracing-go/log"
 	"google.golang.org/grpc/metadata"
-	"smicro/logs"
-	"smicro/meta"
-	"smicro/util"
 )
 
 func TraceServerMiddleware(next MiddlewareFunc) MiddlewareFunc {

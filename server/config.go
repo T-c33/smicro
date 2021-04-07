@@ -10,8 +10,8 @@ import (
 	"strings"
 	"time"
 
+	"github.com/T-c33/smicro/util"
 	"gopkg.in/yaml.v2"
-	"smicro/util"
 )
 
 var (

@@ -6,7 +6,7 @@ import (
 	"net"
 	"sync/atomic"
 
-	"smicro/logs"
+	"github.com/T-c33/smicro/logs"
 )
 
 var ipAuto atomic.Value

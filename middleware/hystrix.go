@@ -3,8 +3,8 @@ package middleware
 import (
 	"context"
 
+	"github.com/T-c33/smicro/meta"
 	"github.com/afex/hystrix-go/hystrix"
-	"smicro/meta"
 )
 
 func HystrixMiddleware(next MiddlewareFunc) MiddlewareFunc {

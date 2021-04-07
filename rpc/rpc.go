@@ -3,8 +3,8 @@ package rpc
 import (
 	"context"
 
-	"smicro/meta"
-	_ "smicro/registry/etcd"
+	"github.com/T-c33/smicro/meta"
+	_ "github.com/T-c33/smicro/registry/etcd"
 )
 
 // service: 服务提供方的服务名

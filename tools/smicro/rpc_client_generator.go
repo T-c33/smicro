@@ -43,12 +43,12 @@ func (d *RpcClientGenerator) Run(opt *Option, metaData *ServiceMetaData) (err er
 	}
 
 	packagePath = fmt.Sprintf("%sc", packagePath)
-	dir := path.Join(opt.Output, "rpc/krpc/clients", packagePath)
+	dir := path.Join(opt.Output, "rpc/srpc/clients", packagePath)
 	os.MkdirAll(dir, 0755)
 
 	rpcClientData := &RpcClientData{
 		ServiceMetaData:   metaData,
-		ClientImportPath:  path.Join(metaData.Prefix, "rpc/krpc/clients", packagePath),
+		ClientImportPath:  path.Join(metaData.Prefix, "rpc/srpc/clients", packagePath),
 		ClientPackageName: fmt.Sprintf("%sc", metaData.PackageName),
 	}
 
@@ -61,7 +61,7 @@ func (d *RpcClientGenerator) Run(opt *Option, metaData *ServiceMetaData) (err er
 	}
 
 	//2. generate smicro client wrap
-	filename = path.Join(opt.Output, "rpc/krpc/", fmt.Sprintf("%s_client_wrap.go", metaData.PackageName))
+	filename = path.Join(opt.Output, "rpc/srpc/", fmt.Sprintf("%s_client_wrap.go", metaData.PackageName))
 	err = d.run(opt, rpcClientData, grpcClientWrapTemplate, filename)
 	if err != nil {
 		fmt.Printf("generate clients  wrap failed, filename:%s, err:%v\n", filename, err)

@@ -7,7 +7,7 @@ import (
 	"strings"
 	"text/template"
 
-	"smicro/util"
+	"github.com/T-c33/smicro/util"
 	"github.com/ibinarytree/proto"
 )
 

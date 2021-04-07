@@ -3,10 +3,10 @@ package middleware
 import (
 	"context"
 
-	"smicro/errno"
-	"smicro/loadbalance"
-	"smicro/logs"
-	"smicro/meta"
+	"github.com/T-c33/smicro/errno"
+	"github.com/T-c33/smicro/loadbalance"
+	"github.com/T-c33/smicro/logs"
+	"github.com/T-c33/smicro/meta"
 )
 
 func NewLoadBalanceMiddleware(balancer loadbalance.LoadBalance) Middleware {

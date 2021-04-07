@@ -6,13 +6,13 @@ import (
 	"log"
 	"net"
 
+	"github.com/T-c33/smicro/logs"
+	"github.com/T-c33/smicro/middleware"
+	"github.com/T-c33/smicro/registry"
+	_ "github.com/T-c33/smicro/registry/etcd"
+	"github.com/T-c33/smicro/util"
 	"golang.org/x/time/rate"
 	"google.golang.org/grpc"
-	"smicro/logs"
-	"smicro/middleware"
-	"smicro/registry"
-	_ "smicro/registry/etcd"
-	"smicro/util"
 )
 
 type SmicroServer struct {

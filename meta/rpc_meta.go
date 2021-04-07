@@ -3,7 +3,7 @@ package meta
 import (
 	"context"
 
-	"smicro/registry"
+	"github.com/T-c33/smicro/registry"
 	"google.golang.org/grpc"
 )
 

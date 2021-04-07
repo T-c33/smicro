@@ -1,4 +1,4 @@
-module smicro
+module github.com/T-c33/smicro
 
 go 1.14
 
@@ -6,7 +6,6 @@ require (
 	github.com/afex/hystrix-go v0.0.0-20180502004556-fa1af6a1f4f5
 	github.com/coreos/etcd v3.3.25+incompatible
 	github.com/golang/protobuf v1.5.2 // indirect
-	github.com/ibinarytree/koala v1.9.15
 	github.com/ibinarytree/proto v1.6.14
 	github.com/opentracing/opentracing-go v1.2.0
 	github.com/prometheus/client_golang v1.10.0

@@ -7,7 +7,7 @@ import(
 	"os"
 	"fmt"
 	
-	"smicro/server"
+	"github.com/T-c33/smicro/server"
 	{{if not .Prefix}}
 	"router"
 	{{else}}

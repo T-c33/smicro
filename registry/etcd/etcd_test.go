@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"smicro/registry"
+	"github.com/T-c33/smicro/registry"
 )
 
 func TestRegister(t *testing.T) {
