@@ -59,7 +59,7 @@ func TestRegister(t *testing.T) {
 		for _, node := range service.Nodes {
 			fmt.Printf("service:%s, node:%#v\n", service.Name, node)
 		}
-		fmt.Println("\n\n")
+		fmt.Println("")
 		time.Sleep(time.Second * 5)
 	}
 }

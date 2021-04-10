@@ -2,6 +2,7 @@ module github.com/T-c33/smicro
 
 go 1.14
 
+replace google.golang.org/grpc => google.golang.org/grpc v1.24.0
 require (
 	github.com/afex/hystrix-go v0.0.0-20180502004556-fa1af6a1f4f5
 	github.com/coreos/etcd v3.3.25+incompatible
@@ -12,7 +13,6 @@ require (
 	github.com/uber/jaeger-client-go v2.25.0+incompatible
 	github.com/urfave/cli v1.22.5
 	golang.org/x/time v0.0.0-20210220033141-f8bda1e9f3ba
-	google.golang.org/grpc v1.24.0
 	google.golang.org/grpc/examples v0.0.0-20210402181922-5730f8d113ee // indirect
 	gopkg.in/yaml.v2 v2.4.0
 )
